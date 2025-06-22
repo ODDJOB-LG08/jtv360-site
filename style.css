@@ -1,31 +1,40 @@
-
 body {
+  margin: 0;
   font-family: Arial, sans-serif;
   background-color: #f4f4f4;
-  margin: 0;
-  padding: 0;
   color: #333;
 }
 header {
-  background-color: #222;
+  background-color: #000;
   color: white;
   padding: 1rem;
   text-align: center;
 }
-nav a {
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+nav ul li a {
   color: white;
-  margin: 0 10px;
   text-decoration: none;
 }
-main {
-  padding: 1rem;
+nav ul li a.active {
+  text-decoration: underline;
+}
+.hero, .content {
+  padding: 2rem;
+  text-align: center;
 }
 footer {
-  background-color: #222;
+  background-color: #000;
   color: white;
   text-align: center;
   padding: 1rem;
   position: fixed;
-  width: 100%;
   bottom: 0;
+  width: 100%;
 }
